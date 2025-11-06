@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+	<style type="text/css">
+		#zara{
+			background-color: lightpink;
+			width: 500px;
+			height: 500px;
+		}
+	</style>
+
+
+<body>
+
+<div id="zara"></div>
+
+<audio id="harmonize" src="harmonize1.m4a"></audio>
+
+<audio id="harmonize2" src="harmonize2.m4a"></audio>
+
+<audio id="harmonize3" src="harmonize3.m4a"></audio>
+<audio id="harmonize4" src="harmonize4.m4a"></audio>
+
+<script type="text/javascript">
+
+	zara.addEventListener("mouseenter", function(){
+		harmonize.play()
+		harmonize2.play()
+
+		harmonize3.play()
+		harmonize4.play()
+	})
+
+	zara.addEventListener("mouseleave", function(){
+		harmonize.pause()
+		harmonize2.pause()
+
+		harmonize3.pause()
+		harmonize4.pause()
+	})
+
+</script>
+
+
+</body>
+</html>
