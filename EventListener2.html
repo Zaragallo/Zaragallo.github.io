@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+
+	#title{
+		background-color: white;
+		font-size: 50px;
+		font-family: monospace;
+		color: black;
+		position: absolute;
+		left: 400px;
+		top: 50px;
+	}
+	#bus{
+		width:400px;
+		height:400px;
+		top: 250px;
+		position: absolute;
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-image: url(https://cdn.dribbble.com/userupload/20342038/file/original-15ae5517ab5867e2f136f8ea535e7fe5.gif);
+
+	}
+
+	a{
+		color:black;
+		text-decoration:none;
+	}
+
+	body{
+		margin: 0px;
+		background-color:lightblue;
+	}
+</style>
+<body>
+
+		<div id="title">Type to move the bus!!!</div>
+
+	<div id="bus"></div>
+
+<script type="text/javascript">
+
+	bus.style.left="0px"
+
+	document.addEventListener("keypress", function(){
+		console.log(	bus.style.left)
+		bus.style.left=parseInt(bus.style.left)+10+"px"
+
+	})
+
+</script>
+
+
+
+</body>
+</html>

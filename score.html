@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+		#cookie{
+			width: 400px;
+			height: 400px;
+			background-image: Url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgGesMbvGakAEQInfD6rusS212Q9vJbMPKaQ&s);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#text{
+			width: 50px;
+			height: 50px;
+			border: 1px solid black;
+			text-align: center;
+			font-size: 40px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+your score is... <div id="text"></div>
+	<div id="cookie"></div>
+
+	<script type="text/javascript">
+
+		let score=0
+
+		cookie.addEventListener("click", function(){
+			score=score+1
+			console.log(score)
+			text.innerText = score
+		})
+
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>

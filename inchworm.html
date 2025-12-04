@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<style type="text/css">
+#text{
+	background-color: lightcoral;
+	font-size: 50px;
+	color: black;
+	position: absolute;
+	left: 270px;
+	top: 50px;
+}
+
+#mickeymouse{
+	width:500px;
+	height:500px;
+	top:170px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-image:url(https://i.pinimg.com/originals/d3/a8/67/d3a867400acb69fc0866b5906146a69d.gif);
+
+}
+
+body{
+	margin: 0px;
+	background-color:black;
+}
+</style>
+
+<body>
+	<div id="text">Type to move the Mickey and reload to redo!!!</div>
+
+	<div id="bus"></div>
+
+	<div id="mickeymouse"></div>
+
+	<script type="text/javascript">
+
+
+mickeymouse.style.left="0px"
+document.addEventListener("keypress", function(){
+
+		mickeymouse.style.left = parseInt(mickeymouse.style.left)+10+"px"
+		console.log("hi im mickey!")
+
+		})
+
+</script>
+
+
+
+</body>
+</html>
