@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+		body{
+			background-color: lightcoral;
+		}
+
+		#title{
+			font-size: 50px;
+			color: white;
+			text-align: center;
+
+
+		}
+	</style>
+
+</head>
+<body>
+
+	<div id="title">🌈😵‍💫STARE AT THE SCREEN😵‍💫🌈</div>
+
+
+
+<script type="text/javascript">
+
+function changeColor (){
+	let r = Math.round(Math.random()*225)
+	let g = Math.round(Math.random()*255)
+	let b = Math.round(Math.random()*255)
+
+document.body.style.backgroundColor ="rgb("+ r + "," +g +","+ b+")"
+}
+
+setInterval(changeColor, 500)
+
+</script>
+
+</body>
+</html>

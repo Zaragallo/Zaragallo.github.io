@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		div{
+			width:700px;
+			height:700px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			opacity:0;
+			display: inline-block;
+
+		}
+
+		#table{
+			background-image: url(file:///Users/c29zs/Desktop/Photo%20on%2010-30-25%20at%2012.37%E2%80%AFPM.jpg);
+		}
+
+		#JZ{
+			background-image: url(file:///var/folders/cx/2xm3vv_n6xldcv6k37c457h40000gp/T/TemporaryItems/NSIRD_screencaptureui_2k50zA/Screenshot%202025-12-15%20at%209.39.23%E2%80%AFAM.png);
+		}
+
+		#KM{
+			background-image: url(file:///var/folders/cx/2xm3vv_n6xldcv6k37c457h40000gp/T/TemporaryItems/NSIRD_screencaptureui_ZGknY7/Screenshot%202025-12-15%20at%209.40.31%E2%80%AFAM.png);
+		}
+	</style>
+
+</head>
+<body>
+
+<center>This holiday season, I'm thankful for...(click on the screen!)</center>
+	<div id="table"></div>
+	<div id="JZ"></div>
+	<div id="KM"></div>
+
+<script type="text/javascript"> 
+	let clickcounter=0
+	document.addEventListener("click", function(){
+		clickcounter=clickcounter+1
+
+		console.log(clickcounter)
+
+		if(clickcounter==1){
+			table.style.opacity="1"
+		}
+
+		if(clickcounter==2){
+			JZ.style.opacity="1"
+		}
+
+		if(clickcounter==3){
+			KM.style.opacity="1"
+		}
+
+		if(clickcounter==4){
+			table.style.opacity="1"
+			clickcounter=0
+			table.style.opacity=0
+			JZ.style.opacity=0
+			KM.style.opacity=0
+		}
+	})
+
+</script>
+
+
+</body>
+</html>
