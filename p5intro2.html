@@ -22,21 +22,24 @@
 					let y = j * 100
 
 					let d = dist(x,y,mouseX,mouseY)
-
-
-
-
+					push()
+					translate(x, y)
+					rotate(frameCount * 0.01)
 					fill("#41D3BD")
-  					circle(x, y, 100);
+  					circle(0, 0, 100);
   					fill("#FF0022")
-  					circle(x,y,75);
+  					circle(0,0,75);
   					fill("#791E94")
-  					circle(x, y, 50);
+  					circle(0, 0, 50);
   					fill("#FF88DC")
-  					circle(x,y,25);
+  					circle(0,0,25);
+  					fill("black")
+  					circle(0-25, 0-25, 25)
+  					fill("black")
+  					circle(0+25,0+25,25)
   					if (d<50) {
-  						arc(x,y,50,50,0,PI)
   					}
+  					pop()
   					// text(i + "," + j, x, y)
 				}
 			}
