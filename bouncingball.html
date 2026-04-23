@@ -23,6 +23,8 @@
 
 		function draw() {
 			background(200)
+
+			d = getRandomDiameter(100,200)
 	
 			if (xpos + d/2 > width || xpos - d/2 < 0) {
 				xspeed *= -1
@@ -31,13 +33,12 @@
 			if(ypos + d/2 > height || ypos - d/2 < 0){
 				yspeed *= -1
 			}
-
-			if(xpos > width/2 && ypos < height/2){
-				circleColor = "#AAEFDF"
-			} else{
-				circleColor = "#F8E5EE"
-			}
-
+			changeBallColor("pink", "purple", "blue", "orange")
+			// if(xpos > width/2 && ypos < height/2){
+			// 	circleColor = "#AAEFDF"
+			// } else{
+			// 	circleColor = "#F8E5EE"
+			// }
 
 
 			xpos += xspeed
@@ -45,6 +46,24 @@
 			// ypos = ypos + 8
 			fill(circleColor)
 			circle(xpos, ypos, d)
+		}
+
+		function getRandomDiameter(minSize, maxSize){
+			let randomDiameter = random(minSize,maxSize)
+
+			return randomDiameter
+		}
+
+		function changeBallColor(topRightColor, bottomRightColor, topLeftColor, bottomLeftColor) {
+				if(xpos>width/2 && ypos<height/2){
+					circleColor = topRightColor
+				} else if (xpos > width/2 && ypos>height/2){
+					circleColor= bottomRightColor
+				} else if (xpos<width/2 && ypos<height/2){
+					circleColor= topLeftColor
+				} else {
+					circleColor = bottomLeftColor
+				}
 		}
 	</script>
 
